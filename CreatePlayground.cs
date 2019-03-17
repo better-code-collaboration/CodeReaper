@@ -30,22 +30,29 @@ namespace CodeReaper
 
             bool IsSuccess = true;
 
-            if (lxmlPath == "")
+            if (lxmlPath.Trim() == "" && linputPath.Trim() == "" && loutputPath.Trim() == "")
             {
-                MessageBox.Show("XML Path is not defined. Please Re-enter and Continue.");
+                MessageBox.Show("Configuration XML Path, Input Folder Path and Output Zip Path are not defined. Please enter the values in Settings Tab and Continue.");
                 IsSuccess = false;
-            }
+            }else
+            {
+                if (lxmlPath.Trim() == "")
+                {
+                    MessageBox.Show("Configuration XML Path is not defined. Please enter the value in Settings Tab and Continue.");
+                    IsSuccess = false;
+                }
 
-            if (linputPath == "")
-            {
-                MessageBox.Show("Input File/Folder Path is not defined. Please Re-enter and Continue.");
-                IsSuccess = false;
-            }
+                if (linputPath.Trim() == "")
+                {
+                    MessageBox.Show("Input Folder Path is not defined. Please enter the value in Settings Tab and Continue.");
+                    IsSuccess = false;
+                }
 
-            if (loutputPath == "")
-            {
-                MessageBox.Show("Output File/Folder Path is not defined. Please Re-enter and Continue.");
-                IsSuccess = false;
+                if (loutputPath.Trim() == "")
+                {
+                    MessageBox.Show("Output Zip Path is not defined. Please enter the value in Settings Tab and Continue.");
+                    IsSuccess = false;
+                }
             }
 
             if (IsSuccess == true)
