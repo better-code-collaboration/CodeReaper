@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.NavPanel = new System.Windows.Forms.Panel();
             this.SidePanel = new System.Windows.Forms.Panel();
-            this.button14 = new System.Windows.Forms.Button();
+            this.btnHomeHelp = new System.Windows.Forms.Button();
             this.btnSettings = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -54,7 +54,7 @@
             // 
             this.NavPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.NavPanel.Controls.Add(this.SidePanel);
-            this.NavPanel.Controls.Add(this.button14);
+            this.NavPanel.Controls.Add(this.btnHomeHelp);
             this.NavPanel.Controls.Add(this.btnSettings);
             this.NavPanel.Controls.Add(this.btnHome);
             this.NavPanel.Dock = System.Windows.Forms.DockStyle.Left;
@@ -73,21 +73,22 @@
             this.SidePanel.Size = new System.Drawing.Size(13, 66);
             this.SidePanel.TabIndex = 4;
             // 
-            // button14
+            // btnHomeHelp
             // 
-            this.button14.FlatAppearance.BorderSize = 0;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.ForeColor = System.Drawing.Color.White;
-            this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.Location = new System.Drawing.Point(4, 672);
-            this.button14.Margin = new System.Windows.Forms.Padding(4);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(48, 42);
-            this.button14.TabIndex = 4;
-            this.button14.Text = "?";
-            this.button14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button14.UseVisualStyleBackColor = true;
+            this.btnHomeHelp.FlatAppearance.BorderSize = 0;
+            this.btnHomeHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHomeHelp.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHomeHelp.ForeColor = System.Drawing.Color.White;
+            this.btnHomeHelp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHomeHelp.Location = new System.Drawing.Point(4, 672);
+            this.btnHomeHelp.Margin = new System.Windows.Forms.Padding(4);
+            this.btnHomeHelp.Name = "btnHomeHelp";
+            this.btnHomeHelp.Size = new System.Drawing.Size(48, 42);
+            this.btnHomeHelp.TabIndex = 4;
+            this.btnHomeHelp.Text = "?";
+            this.btnHomeHelp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHomeHelp.UseVisualStyleBackColor = true;
+            this.btnHomeHelp.Click += new System.EventHandler(this.button14_Click_1);
             // 
             // btnSettings
             // 
@@ -170,7 +171,6 @@
             this.CodeReaper.Size = new System.Drawing.Size(135, 23);
             this.CodeReaper.TabIndex = 3;
             this.CodeReaper.Text = "CodeReaper";
-            this.CodeReaper.Click += new System.EventHandler(this.label2_Click);
             // 
             // CodeReaperLogo
             // 
@@ -262,7 +262,7 @@
             this.mySecondCustmControl1.Size = new System.Drawing.Size(1081, 500);
             this.mySecondCustmControl1.TabIndex = 6;
             // 
-            // Form1
+            // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -278,7 +278,7 @@
             this.Controls.Add(this.mySecondCustmControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form1";
+            this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.NavPanel.ResumeLayout(false);
@@ -301,7 +301,7 @@
         private System.Windows.Forms.Label CodeReaper;
         private System.Windows.Forms.PictureBox CodeReaperLogo;
         private System.Windows.Forms.Panel SidePanel;
-        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button btnHomeHelp;
         private System.Windows.Forms.Label LicenseInfo;
         private System.Windows.Forms.Button Notifications;
         private System.Windows.Forms.Button Settings;

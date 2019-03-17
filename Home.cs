@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -51,17 +52,12 @@ namespace CodeReaper
 
         private void button11_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://github.com/jithinanchanattu/CodeReaper"); 
+            System.Diagnostics.Process.Start("https://github.com/better-code-collaboration/CodeReaper/"); 
         }
-
-        private void label2_Click(object sender, EventArgs e)
+        
+        private void button14_Click_1(object sender, EventArgs e)
         {
-
-        }
-
-        private void button14_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://stackoverflow.com/");
+            System.Diagnostics.Process.Start("https://github.com/better-code-collaboration/CodeReaper/");
         }
     }
 }

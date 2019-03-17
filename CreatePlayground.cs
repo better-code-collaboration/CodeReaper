@@ -22,26 +22,6 @@ namespace CodeReaper
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FirstCustomControl_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             var lxmlPath = Properties.Settings.Default["xmlPath"].ToString();
@@ -128,22 +108,7 @@ namespace CodeReaper
             }
             return temp_root;
         }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void button2_Click(object sender, EventArgs e)
         {
             NoteWelcome.Visible = true;
@@ -263,11 +228,6 @@ namespace CodeReaper
                 }
                 throw Ex;
             }
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
 
         }
 

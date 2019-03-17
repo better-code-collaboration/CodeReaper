@@ -53,7 +53,6 @@
             this.NoteHomeTitle.Size = new System.Drawing.Size(616, 44);
             this.NoteHomeTitle.TabIndex = 0;
             this.NoteHomeTitle.Text = "Click to create your playground!";
-            this.NoteHomeTitle.Click += new System.EventHandler(this.label4_Click);
             // 
             // NoteWelcome
             // 
@@ -65,7 +64,6 @@
             this.NoteWelcome.Size = new System.Drawing.Size(398, 22);
             this.NoteWelcome.TabIndex = 0;
             this.NoteWelcome.Text = "Welcome to the CodeReaper playground!";
-            this.NoteWelcome.Click += new System.EventHandler(this.label5_Click);
             // 
             // btnCreate
             // 
@@ -94,7 +92,6 @@
             this.NoteWarning.TabIndex = 0;
             this.NoteWarning.Text = "Sorry, we can\'t guarantee your files, \r\nif you messed up your playground in Setti" +
     "ngs Tab.";
-            this.NoteWarning.Click += new System.EventHandler(this.label6_Click);
             // 
             // NoteHeader
             // 
@@ -106,7 +103,6 @@
             this.NoteHeader.Size = new System.Drawing.Size(99, 18);
             this.NoteHeader.TabIndex = 2;
             this.NoteHeader.Text = "Please Note:";
-            this.NoteHeader.Click += new System.EventHandler(this.label1_Click);
             // 
             // imgProcessing
             // 
@@ -119,7 +115,6 @@
             this.imgProcessing.TabIndex = 3;
             this.imgProcessing.TabStop = false;
             this.imgProcessing.Visible = false;
-            this.imgProcessing.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // lblProcessing
             // 
@@ -132,7 +127,6 @@
             this.lblProcessing.TabIndex = 4;
             this.lblProcessing.Text = "Processing..!";
             this.lblProcessing.Visible = false;
-            this.lblProcessing.Click += new System.EventHandler(this.label2_Click);
             // 
             // btnCancel
             // 
@@ -162,7 +156,6 @@
             this.infoCompleted.TabIndex = 6;
             this.infoCompleted.Text = "Reaping Completed. Well Played!";
             this.infoCompleted.Visible = false;
-            this.infoCompleted.Click += new System.EventHandler(this.label3_Click);
             // 
             // btnShowFiles
             // 
@@ -216,7 +209,6 @@
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "CreatePlayground";
             this.Size = new System.Drawing.Size(1084, 521);
-            this.Load += new System.EventHandler(this.FirstCustomControl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imgProcessing)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
