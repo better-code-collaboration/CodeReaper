@@ -1,2 +1,2 @@
 # CodeReaper
-An automated repetitive code generation tool
+An automated repetitive code generation tool.
