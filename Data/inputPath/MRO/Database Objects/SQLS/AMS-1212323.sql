@@ -1,3 +1,0 @@
-CREATE TABLE;
-DROP TABLE;
-Commit;

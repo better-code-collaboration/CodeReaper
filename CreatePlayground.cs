@@ -110,8 +110,17 @@ namespace CodeReaper
 
                 if (!exists)
                     System.IO.Directory.CreateDirectory(System.IO.Path.GetDirectoryName(tempFile));
-                                
-                System.IO.File.Copy(file,tempFile);
+
+                try
+                {
+                    System.IO.File.Copy(file, tempFile);
+                }
+                catch (Exception ex)
+                {
+                    System.IO.File.Delete(tempFile);
+                    System.IO.File.Copy(file, tempFile);
+                }
+                
             }
             return temp_root;
         }
@@ -176,6 +185,7 @@ namespace CodeReaper
                                     {
                                         string contents = File.ReadAllText(file);
                                         contents = contents.Replace(dc.ColumnName.ToString(), dr[dc.ColumnName].ToString());
+                                        File.WriteAllText(file, contents);
                                     }
                                 }
                             }
@@ -200,6 +210,7 @@ namespace CodeReaper
                 //zipping and packing the file
                 using (ZipFile zip = new ZipFile())
                 {
+                    System.IO.File.Delete(loutputPath + "\\ReapedFile.zip");
                     string[] zipfiles = Directory.GetFiles(linputPath, "*.*", SearchOption.AllDirectories);
                     // add all those files to the ProjectX folder in the zip file
                     zip.AddFiles(zipfiles);
@@ -222,6 +233,7 @@ namespace CodeReaper
             }  
             catch (Exception Ex)  
             {
+                MessageBox.Show(Ex.Message);
                 MessageBox.Show("An unhandled exception occured. Please contact the maker of this code!");
                 try
                 {
